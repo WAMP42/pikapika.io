@@ -4,8 +4,6 @@
 
 **Note** that this seed project requires node v4.x.x or higher and npm 2.14.7.
 
-**Here is how to [speed-up the build on Windows](https://github.com/mgechev/angular2-seed/wiki/Speed-up-the-build-on-Windows)**.
-
 In order to start the seed use:
 
 
