@@ -13,7 +13,7 @@ import { Config, NavbarComponent, ToolbarComponent } from './shared/index';
   selector     : 'sd-app',
   viewProviders: [HTTP_PROVIDERS],
   templateUrl  : 'app.component.html',
-  directives   : [ROUTER_DIRECTIVES, NavbarComponent, ToolbarComponent]
+  directives   : [ROUTER_DIRECTIVES]
 })
 export class AppComponent {
   constructor() {
