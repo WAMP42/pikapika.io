@@ -1,3 +1,22 @@
 .main {
-  background-color: red;
+  background: url("./assets/images/new-york.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 40px;
+}
+
+.logo {
+  display: block;
+  margin: auto;
+  width: 350px;
+}
+
+.phone {
+  float: right;
+  margin-top: 150px;
+  z-index: 9999;
+  width: 500px;
+  height: 500px;
 }
