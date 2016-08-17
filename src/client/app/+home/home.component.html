@@ -1,12 +1,64 @@
-<p>
-  Howdy! Here's a list of awesome computer scientists. Do you know any others? Add to the list yourself.
-</p>
+<div class="container-fluid main">
+  <div class="container full">
+    <div class="col-md-8 content">
+      <img class="logo" src="./assets/images/logo.png" alt="" />
+      <h1>A Great Radar For Pokemon Go.</h1>
+      <h3>
+        An app for your phone who allows you to detect all the pokemon nearby on a map and in real-time, and share it with other users.
+      </h3>
+      <a href="https://play.google.com/store/apps/details?id=com.pikapika.radar&hl=es" class="btn btn-lg btn-success" role="button">Catch 'Em All</a>
+    </div>
+    <div class="col-md-4">
+      <img class="phone" src="./assets/images/phone.png" alt="" />
+    </div>
+  </div>
+</div>
 
-<form (submit)="addName()">
-  <input [(ngModel)]="newName" name="newName" placeholder="Awesome Computer Scientist">
-  <button type="submit">Add</button>
-</form>
+<div class="container-fluid full">
+  <div class="col-md-12 stats text-center">
+    <h1> Join Our Trainers Community. </h1>
+    <br>
+    <div class="col-md-4 text-center">
+      <i class="fa fa-4x fa-user-plus"></i>
+      <h2>Current Users</h2>
+      <p> Share the location of the pokemons you find with other arround you. <b id="users">2345 </b> users.</p>
+    </div>
+    <div class="col-md-4 text-center">
+      <i class="fa fa-4x fa-envira"></i>
+      <h2>Wild Pokemon Catched</h2>
+      <p>Thanks of Pikapika all the Pokemon we've catch are <b id="wild">234563</b>  Pokemon.</p>
+    </div>
+    <div class="col-md-4 text-center">
+      <i class="fa fa-4x fa-search"></i>
+      <h2>Pokemon Found</h2>
+      <p>With all the help of our users we've found <b id="found">566334</b> Pokemon </p>
+    </div>
+  </div>
+  <div class="col-md-12  contact">
 
-<ul>
-  <li *ngFor="let name of names">{{name}}</li>
-</ul>
+  </div>
+</div>
+
+
+<aside id="sticky-social">
+  <ul>
+    <li>
+      <a href="https://www.facebook.com/pikapika42" class="entypo-facebook" target="_blank">
+        <i class="fa fa-facebook"></i>
+        <span>Facebook</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://twitter.com/42pikapika" class="entypo-twitter" target="_blank">
+        <i class="fa fa-twitter"></i>
+        <span>Twitter</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://play.google.com/store/apps/details?id=com.pikapika.radar&hl=es" class="entypo-play-store" target="_blank">
+        <i class="fa fa-android"></i>
+        <span>Android</span>
+      </a>
+    </li>
+  </ul>
+</aside>
