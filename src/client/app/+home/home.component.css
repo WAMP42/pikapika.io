@@ -87,3 +87,7 @@ ul {
 #sticky-social a[class*="twitter"],
 #sticky-social a[class*="twitter"]:hover,
 #sticky-social a[class*="twitter"] span { background: #00aced; }
+
+#sticky-social a[class*="play-store"],
+#sticky-social a[class*="play-store"]:hover,
+#sticky-social a[class*="play-store"] span { background: #689F38; }
