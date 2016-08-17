@@ -1,6 +1,6 @@
 .main {
   height: 100%;
-  padding: 100px 0;
+  padding: 10px 0;
   background-image: url('./assets/images/city.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,17 +21,8 @@
 }
 
 .phone {
-  display: block;
-  margin: auto;
-}
-.screenshot {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 275px;
-  height: 490px;
-  margin-top: -249px;
-  margin-left: -136px;
+  margin: auto;
 }
 
 .stats {
@@ -45,9 +36,9 @@
   font-size: 36px;
 }
 
-.stats h2 {
+.stats p {
+  margin: 5px 30px;
   text-align: center;
-  font-weight: 200;
 }
 
 .contact {
