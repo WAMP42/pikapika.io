@@ -1,22 +1,13 @@
-.main {
-  background: url("./assets/images/new-york.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  padding: 40px;
-}
-
-.logo {
+:host {
   display: block;
-  margin: auto;
-  width: 350px;
+  padding: 0 16px;
 }
 
-.phone {
-  float: right;
-  margin-top: 150px;
-  z-index: 9999;
-  width: 500px;
-  height: 500px;
+input {
+  width: 250px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0 0 0 8px;
 }
