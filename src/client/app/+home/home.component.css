@@ -1,13 +1,89 @@
-:host {
+.main {
+  height: 100%;
+  padding: 100px 0;
+  background-image: url('./assets/images/city.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.full {
+  height: 100%;
+}
+.content {
+  padding: 20px;
+}
+
+.logo {
+  width: auto;
+  height: 115px;
+}
+
+.phone {
   display: block;
-  padding: 0 16px;
+  margin: auto;
+}
+.screenshot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 275px;
+  height: 490px;
+  margin-top: -249px;
+  margin-left: -136px;
 }
 
-input {
-  width: 250px;
+h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: 300;
+}
+h3 {
+  text-align: left;
+  padding: 0 20px 0 0;
+  color: white;
+  font-weight: 200;
 }
 
+a {
+  text-decoration: none;
+}
 ul {
-  list-style-type: none;
-  padding: 0 0 0 8px;
+   list-style: none;
+   margin: 0;
+   padding: 0;
 }
+
+#sticky-social {
+   left: 0;
+   position: fixed;
+   top: 150px;
+}
+#sticky-social a {
+   background: #333;
+   color: #fff;
+   display: block;
+   height: 35px;
+   font: 16px "Open Sans", sans-serif;
+   line-height: 35px;
+   position: relative;
+   text-align: center;
+   width: 35px;
+}
+#sticky-social a span {
+   line-height: 35px;
+   left: -120px;
+   position: absolute;
+   text-align:center;
+   width:120px;
+}
+#sticky-social a:hover span {
+   left: 100%;
+}
+#sticky-social a[class*="facebook"],
+#sticky-social a[class*="facebook"]:hover,
+#sticky-social a[class*="facebook"] span { background: #3b5998; }
+
+#sticky-social a[class*="twitter"],
+#sticky-social a[class*="twitter"]:hover,
+#sticky-social a[class*="twitter"] span { background: #00aced; }
