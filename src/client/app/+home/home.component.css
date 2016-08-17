@@ -9,6 +9,7 @@
 
 .full {
   height: 100%;
+  padding: 0;
 }
 .content {
   padding: 20px;
@@ -31,6 +32,28 @@
   height: 490px;
   margin-top: -249px;
   margin-left: -136px;
+}
+
+.stats {
+  padding: 10px 0;
+  height: 50%;
+  color: white;
+  background: #04B2D9;
+}
+
+.stats h1 {
+  font-size: 36px;
+}
+
+.stats h2 {
+  text-align: center;
+  font-weight: 200;
+}
+
+.contact {
+  height: 50%;
+  background-color: black;
+  color: white;
 }
 
 h1 {

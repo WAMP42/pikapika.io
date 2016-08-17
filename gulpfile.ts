@@ -51,7 +51,7 @@ gulp.task('build.prod', (done: any) =>
               'copy.js.prod',
               'build.js.prod',
               'build.bundles',
-               'build.fonts',
+              'build.fonts',
               'build.bundles.app',
               'build.index.prod',
               done));
