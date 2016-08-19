@@ -1,6 +1,6 @@
 .main {
   height: 80%;
-  padding: 10px;
+  padding: 70px;
   background-image: url('./assets/images/city.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,7 +22,7 @@
 }
 
 .stats {
-  padding: 15px 0;
+  padding: 70px 0;
   height: 50%;
   color: white;
   background: #04B2D9;
