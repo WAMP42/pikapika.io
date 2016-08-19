@@ -28,6 +28,15 @@
   background: #04B2D9;
 }
 
+.form {
+  padding: 70px 0;
+  height: 50%;
+  background: black;
+}
+
+.form h1 {
+  margin-bottom: 10px;
+}
 .stats h1 {
   font-size: 36px;
 }

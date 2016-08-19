@@ -1,13 +1,15 @@
 import { Component, OnInit } from '@angular/core';
+import { IosBetaFormComponent } from './home-ios-beta-form/index';
 
 /**
  * This class represents the lazy loaded HomeComponent.
  */
 @Component({
-  moduleId: module.id,
-  selector: 'sd-home',
+  moduleId   : module.id,
+  selector   : 'pikapika-home',
   templateUrl: 'home.component.html',
-  styleUrls: ['home.component.css'],
+  styleUrls  : ['home.component.css'],
+  directives : [IosBetaFormComponent]
 })
 
 export class HomeComponent implements OnInit {
