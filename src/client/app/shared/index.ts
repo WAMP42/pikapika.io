@@ -3,4 +3,3 @@
  */
 export * from './config/env.config';
 export * from './api.service';
-export * from './utils/index';
