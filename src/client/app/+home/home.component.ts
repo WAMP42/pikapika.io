@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IosBetaFormComponent } from './home-ios-beta-form/index';
+import { APIService } from '../shared/index';
 
 /**
  * This class represents the lazy loaded HomeComponent.
@@ -14,10 +15,29 @@ import { IosBetaFormComponent } from './home-ios-beta-form/index';
 
 export class HomeComponent implements OnInit {
 
+  public pokemon: number;
+  public foundPokemon: number;
+  public users: number;
+
+  constructor(private api: APIService) {}
+
   ngOnInit(){
+
+    this.api
+        .getAllPokemon()
+        .subscribe(
+          (res:any) => {
+            console.log(res);
+          },
+          (err:any) => {
+
+          }
+        );
+
     this.animateValue("users", 2345, 3423424, 11000);
     this.animateValue("wild", 234563, 36354643, 50);
     this.animateValue("found", 566334, 34534534, 50);
+
   }
 
   public animateValue(id: string, start:any, end:any, duration:any) {

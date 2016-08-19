@@ -1,30 +1,43 @@
-import { Injectable, Inject, Optional } from '@angular/core';
-import { Http } from '@angular/http';
+import { Injectable } from '@angular/core';
+import { Http, Response } from '@angular/http';
+import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/catch';
 
-import { JSONSearchParams, ErrorHandler, RequestService } from './utils/index'
 import { Config } from './config/env.config';;
 
+/**
+ * This class provides the NameList service with methods to read names and add names.
+ */
 @Injectable()
-export class APIService extends RequestService  {
-  constructor(
-  @Inject(Http) http: Http,
-  @Inject(JSONSearchParams) protected searchParams: JSONSearchParams,
-  @Optional() @Inject(ErrorHandler) errorHandler: ErrorHandler
-  ) {
-    super(http, searchParams, errorHandler);
+export class APIService {
+
+  /**
+   * Creates a new NameListService with the injected Http.
+   * @param {Http} http - The injected Http.
+   * @constructor
+   */
+  constructor(private http: Http) {}
+
+  /**
+   * Returns an Observable for the HTTP GET request for the JSON resource.
+   * @return {string[]} The Observable for the HTTP request.
+   */
+  public getAllPokemon(): Observable<string[]> {
+    return this.http.get(Config.API + '/pokemon/pokemon_count')
+                    .map((res: Response) => res.json())
+                    .catch(this.handleError);
   }
 
-  public getAllPokemon() {
-
-  let method: string = 'GET';
-  let url: string = Config.API + '/pokemon/pokemon_count';
-
-  let urlParams: any = {};
-  let params: any = {};
-
-  let result = this.request(method, url, urlParams, params);
-
-  return result;
-}
+  /**
+    * Handle HTTP error
+    */
+  private handleError (error: any) {
+    // In a real world app, we might use a remote logging infrastructure
+    // We'd also dig deeper into the error to get a better message
+    let errMsg = (error.message) ? error.message :
+      error.status ? `${error.status} - ${error.statusText}` : 'Server error';
+    console.error(errMsg); // log to console instead
+    return Observable.throw(errMsg);
+  }
 }

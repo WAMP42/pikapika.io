@@ -1,4 +1,4 @@
 export = {
-  API: 'api.pikapika.io',
+  API: 'http://api.pikapika.io/api',
   ENV: 'PROD'
 };
