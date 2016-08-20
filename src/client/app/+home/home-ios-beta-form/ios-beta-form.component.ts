@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { APIService } from '../../shared/index';
 
 @Component({
   moduleId   : module.id,
@@ -7,7 +8,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls  : ['ios-beta-form.component.css']
 })
 export class IosBetaFormComponent implements OnInit {
-  constructor() {  }
+
+  public newemail: string = '';
+
+  constructor(private api: APIService) {  }
 
   ngOnInit() {}
+
+  public join() {
+    this.api.joinTheBta(this.newemail)
+            .subscribe(
+              res => {
+                this.newemail = '';
+                alert('You will be notifed when the IOS beta is ready stay in touch');
+              },
+              err => {
+                this.newemail = '';
+                alert('Something went wrong, try again latter');
+              }
+            );
+  }
 }

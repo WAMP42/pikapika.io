@@ -3,8 +3,8 @@
     <div class="well">
       <form action="#">
         <div class="input-group">
-          <input class="btn btn-lg" name="email" id="email" type="email" placeholder="Your Email" required>
-          <button class="btn btn-info btn-lg" type="submit">Submit</button>
+          <input  [(ngModel)]="newemail" name="newemail" class="btn btn-lg" name="email" id="email" type="email" placeholder="Your Email" required>
+          <button (click)="join()" class="btn btn-info btn-lg" type="submit">Submit</button>
         </div>
       </form>
     </div>
