@@ -14,7 +14,5 @@ import { Config } from './shared/index';
 })
 
 export class AppComponent {
-  constructor() {
-    console.log('Environment config', Config);
-  }
+  constructor() {}
 }
