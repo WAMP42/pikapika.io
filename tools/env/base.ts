@@ -1,3 +1,3 @@
 export = {
-  API: 'http://api.pikapika.io/api'
+  API: 'http://localhost:3000/api',
 };

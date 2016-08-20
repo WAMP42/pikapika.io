@@ -23,8 +23,20 @@ export class APIService {
    * Returns an Observable for the HTTP GET request for the JSON resource.
    * @return {string[]} The Observable for the HTTP request.
    */
-  public getAllPokemon(): Observable<string[]> {
-    return this.http.get(Config.API + '/pokemon/pokemon_count')
+  public getNumberPokemon(): Observable<string[]> {
+    return this.http.get(Config.API + '/pokemons/count')
+                    .map((res: Response) => res.json())
+                    .catch(this.handleError);
+  }
+
+  public getNumberTrainer(): Observable<string[]> {
+    return this.http.get(Config.API + '/trainers/count')
+                    .map((res: Response) => res.json())
+                    .catch(this.handleError);
+  }
+
+  public getNumberSpwan(): Observable<string[]> {
+    return this.http.get(Config.API + '/pokemon-spawns/count')
                     .map((res: Response) => res.json())
                     .catch(this.handleError);
   }
