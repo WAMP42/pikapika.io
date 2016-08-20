@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { APIService } from '../../shared/index';
 
 @Component({
@@ -7,13 +7,11 @@ import { APIService } from '../../shared/index';
   templateUrl: 'ios-beta-form.component.html',
   styleUrls  : ['ios-beta-form.component.css']
 })
-export class IosBetaFormComponent implements OnInit {
+export class IosBetaFormComponent {
 
   public newemail: string = '';
 
   constructor(private api: APIService) {  }
-
-  ngOnInit() {}
 
   public join() {
     this.api.joinTheBta(this.newemail)

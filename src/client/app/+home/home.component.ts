@@ -26,14 +26,13 @@ export class HomeComponent implements OnInit {
   }
 
   public animateValue(id: string, start: any, end: any, duration: any) {
-    var range = end - start;
     var current = start;
     var increment = end > start ? 1 : -1;
     var obj = document.getElementById(id);
     var timer = setInterval(function() {
       current += increment;
       obj.innerHTML = current;
-      if (current == end) {
+      if (current === end) {
         clearInterval(timer);
       }
     }, duration);
@@ -46,11 +45,11 @@ export class HomeComponent implements OnInit {
       .subscribe(
         (res: any) => {
           this.pokemon = res.count;
-          this.animateValue("wild", this.pokemon, this.pokemon + 100000, 120);
+          this.animateValue('wild', this.pokemon, this.pokemon + 100000, 120);
         },
         (err: any) => {
           this.pokemon = 890;
-          this.animateValue("wild", this.pokemon, this.pokemon + 100000, 120);
+          this.animateValue('wild', this.pokemon, this.pokemon + 100000, 120);
         }
       );
 
@@ -59,11 +58,11 @@ export class HomeComponent implements OnInit {
       .subscribe(
         (res: any) => {
           this.users = res.count;
-          this.animateValue("users", this.users, this.users + 5000 , 6000);
+          this.animateValue('users', this.users, this.users + 5000 , 6000);
         },
         (err: any) => {
           this.users = 21701;
-          this.animateValue("users", this.users, this.users + 5000 , 6000);
+          this.animateValue('users', this.users, this.users + 5000 , 6000);
         }
       );
 
@@ -72,11 +71,11 @@ export class HomeComponent implements OnInit {
       .subscribe(
         (res: any) => {
           this.foundPokemon = res.count;
-          this.animateValue("found", this.foundPokemon, this.foundPokemon + 5000, 50);
+          this.animateValue('found', this.foundPokemon, this.foundPokemon + 5000, 50);
         },
         (err: any) => {
           this.foundPokemon = 186350;
-          this.animateValue("found", this.foundPokemon, this.foundPokemon + 5000, 50);
+          this.animateValue('found', this.foundPokemon, this.foundPokemon + 5000, 50);
         }
       );
   }
