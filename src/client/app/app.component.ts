@@ -8,13 +8,11 @@ import { Config } from './shared/index';
  */
 @Component({
   moduleId: module.id,
-  selector: 'sd-app',
+  selector: 'pikapika-app',
   templateUrl: 'app.component.html',
   directives: [ROUTER_DIRECTIVES]
 })
 
 export class AppComponent {
-  constructor() {
-    console.log('Environment config', Config);
-  }
+  constructor() {}
 }

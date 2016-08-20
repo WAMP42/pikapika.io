@@ -1,5 +1,3 @@
 export = {
-  // Sample API url
-  API: 'https://demo.com'
+  API: 'http://localhost:3000/api',
 };
-
