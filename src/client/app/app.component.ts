@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { ROUTER_DIRECTIVES } from '@angular/router';
-import { Config } from './shared/index';
 
 /**
  * This class represents the main application component. Within the @Routes annotation is the configuration of the
@@ -13,6 +12,4 @@ import { Config } from './shared/index';
   directives: [ROUTER_DIRECTIVES]
 })
 
-export class AppComponent {
-  constructor() {}
-}
+export class AppComponent {}
