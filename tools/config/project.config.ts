@@ -18,6 +18,14 @@ export class ProjectConfig extends SeedConfig {
 
   constructor() {
     super();
+
+    this.SYSTEM_CONFIG_DEV.paths['angular2-google-maps'] =
+      `${this.APP_BASE}node_modules/angular2-google-maps/core`;
+
+    this.SYSTEM_BUILDER_CONFIG.packages['angular2-google-maps'] = {
+        main: 'index',
+        defaultExtension : 'js'
+    }
     // this.APP_TITLE = 'Put name of your app here';
 
     /* Enable typeless compiler runs (faster) between typed compiler runs. */
