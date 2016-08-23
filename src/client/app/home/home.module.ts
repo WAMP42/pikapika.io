@@ -18,4 +18,4 @@ import { APIService } from '../shared/index';
     providers: [APIService]
 })
 
-export class HomeModule { }
+export class MapModule { }
