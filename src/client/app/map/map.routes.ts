@@ -3,7 +3,7 @@ import { MapComponent } from './index';
 
 export const MapRoutes: Route[] = [
   {
-    path: '/map',
+    path: 'map',
     component: MapComponent
   }
 ];
