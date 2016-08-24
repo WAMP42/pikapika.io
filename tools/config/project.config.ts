@@ -20,7 +20,7 @@ export class ProjectConfig extends SeedConfig {
     super();
 
     this.SYSTEM_CONFIG_DEV.paths['angular2-google-maps'] =
-      `${this.APP_BASE}node_modules/angular2-google-maps/core`;
+      `${this.APP_BASE}node_modules/angular2-google-maps/core/`;
 
     this.SYSTEM_BUILDER_CONFIG.packages['angular2-google-maps'] = {
         main: 'index',

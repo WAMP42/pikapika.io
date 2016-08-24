@@ -16,4 +16,4 @@ import { GOOGLE_MAPS_DIRECTIVES } from 'angular2-google-maps/core';
     providers: []
 })
 
-export class HomeModule { }
+export class MapModule { }
