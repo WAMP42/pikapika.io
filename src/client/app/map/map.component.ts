@@ -4,12 +4,12 @@ import { GoogleMapsAPIWrapper, LatLngLiteral } from 'angular2-google-maps/core/i
 import { APIService } from '../shared/index';
 
 @Component({
-  moduleId: module.id,
-  selector: 'pika-map',
+  moduleId   : module.id,
+  selector   : 'pika-map',
   templateUrl: 'map.component.html',
-  styleUrls: ['map.component.css'],
+  styleUrls  : ['map.component.css'],
 })
-export class MapComponent implements OnInit {
+export class MapComponent implements OnInit  {
 
   public zoom: number = 18;
   public pokemons: any;
@@ -44,7 +44,7 @@ export class MapComponent implements OnInit {
                   this.bounds = response;
                   console.log(this.bounds);
                 });
-          } , 1000);
+          } , 500);
         });
 
   }
