@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { SharedModule } from '../shared/shared.module';
 import { MapComponent } from './map.component';
-import { GOOGLE_MAPS_DIRECTIVES } from 'angular2-google-maps/core/index';
+import { GOOGLE_MAPS_DIRECTIVES, GoogleMapsAPIWrapper } from 'angular2-google-maps/core/index';
 
 @NgModule({
     imports: [
@@ -12,7 +12,7 @@ import { GOOGLE_MAPS_DIRECTIVES } from 'angular2-google-maps/core/index';
     ],
     declarations: [MapComponent, GOOGLE_MAPS_DIRECTIVES],
     exports: [MapComponent],
-    providers: []
+    providers: [GoogleMapsAPIWrapper]
 })
 
 export class MapModule { }
