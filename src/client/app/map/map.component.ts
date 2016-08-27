@@ -42,7 +42,6 @@ export class MapComponent implements OnInit  {
             this.mapAPIWrapper.getBounds()
                 .then((response)=> {
                   this.bounds = response;
-                  console.log(this.bounds);
                 });
           } , 500);
         });
@@ -67,7 +66,7 @@ export class MapComponent implements OnInit  {
 
   private getPokemon() {
     this.api
-      .getNerbyPokemon()
+      .getAllPokemon()
       .subscribe(
       (response: any) => {
         this.pokemons = response;

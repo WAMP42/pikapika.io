@@ -51,6 +51,12 @@ export class APIService {
                     .catch(this.handleError);
   }
 
+  public getAllPokemon() {
+    return this.http.get(Config.API + '/pokemons')
+                      .map((res: Response) => res.json())
+                      .catch(this.handleError);
+  }
+
   public getNerbyPokemon() {
     return this.http.get(Config.API + '/pokemons')
                       .map((res: Response) => res.json())
